@@ -20,11 +20,15 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">Introduction</a></li>
-    <li><a href="#features">Outils et technologies</a></li>
-    <li><a href="#installation">API des applications Microsoft</a></li>
-    <li><a href="#contributing">Inscription de boomi atmosphere sur Microsoft Azure </a></li>
-    <li><a href="#contributing">Configuration de Postman </a></li>
+    <li><a href="#about-the-project"> Introduction </a></li>
+    <li><a href="#features"> Outils et technologies </a></li>
+    <li><a href="#installation"> API des applications Microsoft </a></li>
+    <li><a href="#contributing"> Inscription de boomi atmosphere sur Microsoft Azure </a></li>
+    <li><a href="#contributing"> Configuration de Postman </a></li>
+    <li><a href="#contributing"> Configuration de Boomi </a></li>
+    <li><a href="#contributing"> L’utilité des paramètres </a></li>
+    <li><a href="#contributing"> Utilisation globale de ces paramètres </a></li>
+    <li><a href="#contributing"> Utilité de l'Access Token dans Boomi </a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -90,7 +94,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
    - **URL :** Utilisez l'URL de base de Microsoft Graph : `https://graph.microsoft.com/v1.0`.
    - **Authentication Type :** Sélectionnez `OAuth 2.0`
 
-1. **Configurer l'Authentification OAuth 2.0 :**
+2. **Configurer l'Authentification OAuth 2.0 :**
    - **Grant Type :** Sélectionnez `Client Credentials`.
    - **Client ID :** Utilisez l'ID d'application (client ID) que vous avez obtenu dans Azure AD.
    - **Client Secret :** Utilisez le secret client que vous avez généré dans Azure AD.
