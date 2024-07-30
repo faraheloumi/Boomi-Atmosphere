@@ -109,9 +109,9 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
      
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- L’UTILITE DES PARAMETRES -->
+<!-- UTILITE DES PARAMETRES -->
 
-## L’utilité des paramètres
+## Utilité des paramètres
 
 Ces paramètres sont essentiels pour l'authentification et l'autorisation OAuth 2.0 avec Azure Active Directory (Azure AD) pour accéder aux API de Microsoft Graph. Voici une explication de chacun :
 1. **Client ID :** 
