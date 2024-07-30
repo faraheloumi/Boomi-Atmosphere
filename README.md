@@ -21,14 +21,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#introduction"> Introduction </a></li>
-    <li><a href="#outils et technologies"> Outils et technologies </a></li>
-    <li><a href="#api des applications microsoft"> API des applications Microsoft </a></li>
-    <li><a href="#inscription de boomi atmosphere sur microsoft azure"> Inscription de boomi atmosphere sur Microsoft Azure </a></li>
-    <li><a href="#configuration de postman"> Configuration de Postman </a></li>
-    <li><a href="#configuration de boomi"> Configuration de Boomi </a></li>
-    <li><a href="#l’utilité des paramètres"> L’utilité des paramètres </a></li>
-    <li><a href="#utilisation globale de ces paramètres"> Utilisation globale de ces paramètres </a></li>
-    <li><a href="#utilité de l'access token dans boomi"> Utilité de l'Access Token dans Boomi </a></li>
+    <li><a href="#outils_et_technologies"> Outils et technologies </a></li>
+    <li><a href="#api_des_applications_microsoft"> API des applications Microsoft </a></li>
+    <li><a href="#inscription_de_boomi_atmosphere_sur_microsoft_azure"> Inscription de boomi atmosphere sur Microsoft Azure </a></li>
+    <li><a href="#configuration_de_postman"> Configuration de Postman </a></li>
+    <li><a href="#configuration_de_boomi"> Configuration de Boomi </a></li>
+    <li><a href="#l’utilité_des_paramètres"> L’utilité des paramètres </a></li>
+    <li><a href="#utilisation_globale_de_ces_paramètres"> Utilisation globale de ces paramètres </a></li>
+    <li><a href="#utilité_de_l'access_token_dans_boomi"> Utilité de l'Access Token dans Boomi </a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
