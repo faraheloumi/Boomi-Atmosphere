@@ -43,7 +43,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 
 1. **Boomi Atomsphere**
 2. **API des applications Microsoft:** https://graph.microsoft.com/v1.0
-3. **API Atlassian:** Jira: https://farahelloumi.atlassian.net/rest/api/2/ and Confluence: https://farahelloumi.atlassian.net/wiki/
+3. **API Atlassian:** Jira: https://votredomaine.atlassian.net/rest/api/2/ and Confluence: https://votredomaine.atlassian.net/wiki/
 4. **API BoondManager:** https://api.boondmanager.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,27 +70,72 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
 
 ## Configuration de Postman
 
-1. **Configurez la Requête dans Postman :**
-
    **URL :** `https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token`
-
    Remplacez `{tenant-id}` par votre ID de locataire.
-
    **Méthode :** `POST`
-
    **Headers :**
-
+      - `Content-Type` : application/x-www-form-urlencoded
     **Body (x-www-form-urlencoded) :**
       - `client_id` : Utilisez l'ID d'application (client ID).
       - `scope` : `https://graph.microsoft.com/.default`
       - `client_secret` : Utilisez la valeur du secret client que vous avez copié.
       - `grant_type` : `client_credentials`
 
+<!-- Configuration de Boomi -->
 
+## Configuration de Boomi
+1. **Configurer les Détails de la Connexion :**
+   - **Name:** Donnez un nom à votre connexion (par exemple, "Microsoft Graph API").
+   - **Connection Type :** Sélectionnez `HTTP Client`.
+   - **URL :** Utilisez l'URL de base de Microsoft Graph : `https://graph.microsoft.com/v1.0`.
+   - **Authentication Type :** Sélectionnez `OAuth 2.0`
 
+1. **Configurer l'Authentification OAuth 2.0 :**
+   - **Grant Type :** Sélectionnez `Client Credentials`.
+   - **Client ID :** Utilisez l'ID d'application (client ID) que vous avez obtenu dans Azure AD.
+   - **Client Secret :** Utilisez le secret client que vous avez généré dans Azure AD.
+   - **Scope :** `https://graph.microsoft.com/.default`
+   - **Access Token URL :** Utilisez l'URL suivante, en remplaçant {`tenant-id`} par votre ID de locataire : `https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- L’utilité des paramètres -->
 
+## L’utilité des paramètres
+
+Ces paramètres sont essentiels pour l'authentification et l'autorisation OAuth 2.0 avec Azure Active Directory (Azure AD) pour accéder aux API de Microsoft Graph. Voici une explication de chacun :
+1. **Client ID :** 
+  -**Utilité :** Il s'agit de l'identifiant unique de l'application dans Azure AD. Il permet à     Azure AD de reconnaître l'application qui demande l'accès aux ressources protégées.
+  -**Obtention :** Vous l'obtenez lors de l'enregistrement de votre application dans Azure AD.
+2. **Client Secret :**
+  - **Utilité :** C'est une clé secrète partagée entre votre application et Azure AD. Elle est   utilisée pour prouver l'authenticité de l'application lors des demandes de jetons d'accès.
+  - **Obtention :** Vous le générez lors de l'enregistrement de l'application et devez le        conserver en sécurité.
+3. **Scope :** 
+  - **Utilité :** Il définit les permissions dont l'application a besoin.       
+   `<https://graph.microsoft.com/.default>` indique que l'application demande toutes les     
+   permissions qui lui ont été accordées lors de son enregistrement dans Azure AD.
+  - **Spécification :** Cela permet de limiter l'accès aux données et fonctionnalités   
+    spécifiques nécessaires pour l'application.
+4. **Access Token URL :** 
+  - **Utilité :** C'est l'URL à laquelle l'application envoie une demande pour obtenir un jeton d'accès OAuth 2.0. Ce jeton est ensuite utilisé pour accéder aux API protégées de Microsoft Graph.
+  - **Personnalisation :** Vous devez remplacer {tenant-id} par l'ID de votre locataire Azure AD, ce qui permet de diriger la requête vers l'annuaire spécifique de votre organisation.
+5. **tenant-id :**
+  - **Utilité :** C'est l'identifiant unique de votre locataire Azure AD (votre organisation dans Azure). Il est nécessaire pour configurer correctement les URL d'autorisation et de jeton afin de pointer vers les ressources de votre locataire spécifique.
+  - **Obtention :** Vous pouvez le trouver dans le portail Azure AD sous les propriétés de votre annuaire.
+
+<!-- Utilisation globale de ces paramètres -->
+
+## Utilisation globale de ces paramètres
+Ces paramètres sont utilisés ensemble pour permettre à votre application d'obtenir un jeton d'accès via le flux d'authentification OAuth 2.0. Voici un résumé du processus :
+1. **Enregistrement de l'application :** Vous enregistrez votre application dans Azure AD pour obtenir le Client ID et générer un Client Secret.
+2. **Demande de jeton :** Votre application envoie une requête POST à l'URL du jeton (Access Token URL) avec le Client ID, Client Secret, Scope, et d'autres informations nécessaires.
+3. **Obtention du jeton :** Si les informations fournies sont valides, Azure AD renvoie un jeton d'accès.
+4. **Accès aux API :** Votre application utilise ce jeton d'accès pour faire des requêtes authentifiées aux API de Microsoft Graph et accéder aux ressources demandées.
+
+<!-- Utilité de l'Access Token dans Boomi -->
+
+## Utilité de l'Access Token dans Boomi
+
+L'Access Token que vous avez généré est utilisé pour authentifier les demandes que votre application envoie à l'API Microsoft Graph. Lorsque vous utilisez Boomi pour interagir avec Microsoft Graph, Boomi nécessite cet Access Token pour pouvoir faire des appels authentifiés à l'API.
 
 <!-- CONTACT -->
 
