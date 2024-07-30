@@ -50,6 +50,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 2. **API des applications Microsoft:** https://graph.microsoft.com/v1.0
 3. **API Atlassian:** Jira: https://votredomaine.atlassian.net/rest/api/2/ and Confluence: https://votredomaine.atlassian.net/wiki/
 4. **API BoondManager:** https://api.boondmanager.com
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- API DES APPLICATIONS MICROSOFT -->
@@ -60,6 +61,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 2. **Microsoft 365:** Les données et services de Microsoft 365, comme les emails d'Outlook, les fichiers de OneDrive, les calendriers, les contacts, et plus encore, sont accessibles via Microsoft Graph.
 3. **Azure Services :** Microsoft Graph peut également interagir avec d'autres services Azure pour gérer les ressources et les périphériques, obtenir des informations de sécurité, et automatiser des processus en utilisant les données d'Azure.
 En résumé, Microsoft Graph est une interface centrale qui permet d'interagir avec les données et les services de Microsoft, y compris ceux de Microsoft Azure et Microsoft 365. Les API et endpoints fournis par Microsoft Graph nécessitent des autorisations et des tokens d'accès gérés par Azure AD pour s'assurer que les requêtes sont sécurisées et que l'accès aux données est contrôlé.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- INSCRIPTION DE BOOMI ATMOSPHERE SUR MICROSOFT AZURE -->
@@ -69,6 +71,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
 2. Naviguez vers **Gérer**.
 3. Sélectionnez **Inscriptions d'application**.
 4. Configurez **Boomi Atmosphere**.
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONFIGURATION DE POSTMAN -->
@@ -86,6 +89,8 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
       - `client_secret` : Utilisez la valeur du secret client que vous avez copié.
       - `grant_type` : `client_credentials`
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONFIGURATION DE BOOMI -->
 
 ## Configuration de Boomi
@@ -101,6 +106,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
    - **Client Secret :** Utilisez le secret client que vous avez généré dans Azure AD.
    - **Scope :** `https://graph.microsoft.com/.default`
    - **Access Token URL :** Utilisez l'URL suivante, en remplaçant {`tenant-id`} par votre ID de locataire : `https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token`
+     
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- L’UTILITE DES PARAMETRES -->
@@ -127,6 +133,8 @@ Ces paramètres sont essentiels pour l'authentification et l'autorisation OAuth 
   - **Utilité :** C'est l'identifiant unique de votre locataire Azure AD (votre organisation dans Azure). Il est nécessaire pour configurer correctement les URL d'autorisation et de jeton afin de pointer vers les ressources de votre locataire spécifique.
   - **Obtention :** Vous pouvez le trouver dans le portail Azure AD sous les propriétés de votre annuaire.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- UTILISATION GLOBALE DE CES PARAMETRES -->
 
 ## Utilisation globale de ces paramètres
@@ -136,11 +144,15 @@ Ces paramètres sont utilisés ensemble pour permettre à votre application d'ob
 3. **Obtention du jeton :** Si les informations fournies sont valides, Azure AD renvoie un jeton d'accès.
 4. **Accès aux API :** Votre application utilise ce jeton d'accès pour faire des requêtes authentifiées aux API de Microsoft Graph et accéder aux ressources demandées.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- UTILITE DE L'ACCESS TOKEN DANS BOOMI -->
 
 ## Utilité de l'Access Token dans Boomi
 
 L'Access Token que vous avez généré est utilisé pour authentifier les demandes que votre application envoie à l'API Microsoft Graph. Lorsque vous utilisez Boomi pour interagir avec Microsoft Graph, Boomi nécessite cet Access Token pour pouvoir faire des appels authentifiés à l'API.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
