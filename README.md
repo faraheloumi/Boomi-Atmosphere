@@ -20,15 +20,15 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project"> Introduction </a></li>
-    <li><a href="#features"> Outils et technologies </a></li>
-    <li><a href="#installation"> API des applications Microsoft </a></li>
-    <li><a href="#contributing"> Inscription de boomi atmosphere sur Microsoft Azure </a></li>
-    <li><a href="#contributing"> Configuration de Postman </a></li>
-    <li><a href="#contributing"> Configuration de Boomi </a></li>
-    <li><a href="#contributing"> L’utilité des paramètres </a></li>
-    <li><a href="#contributing"> Utilisation globale de ces paramètres </a></li>
-    <li><a href="#contributing"> Utilité de l'Access Token dans Boomi </a></li>
+    <li><a href="#introduction"> Introduction </a></li>
+    <li><a href="#outils et technologies"> Outils et technologies </a></li>
+    <li><a href="#api des applications microsoft"> API des applications Microsoft </a></li>
+    <li><a href="#inscription de boomi atmosphere sur microsoft azure"> Inscription de boomi atmosphere sur Microsoft Azure </a></li>
+    <li><a href="#configuration de postman"> Configuration de Postman </a></li>
+    <li><a href="#configuration de boomi"> Configuration de Boomi </a></li>
+    <li><a href="#l’utilité des paramètres"> L’utilité des paramètres </a></li>
+    <li><a href="#utilisation globale de ces paramètres"> Utilisation globale de ces paramètres </a></li>
+    <li><a href="#utilité de l'access token dans boomi"> Utilité de l'Access Token dans Boomi </a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
