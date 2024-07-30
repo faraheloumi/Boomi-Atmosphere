@@ -29,7 +29,7 @@
   </ol>
 </details>
 
-<!-- Introduction -->
+<!-- INTRODUCTION -->
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Outils et technologies -->
+<!-- OUTILS ET TECHNOLOGIES -->
 
 ## Outils et technologies
 
@@ -47,7 +47,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 4. **API BoondManager:** https://api.boondmanager.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- API des applications Microsoft -->
+<!-- API DES APPLICATIONS MICROSOFT -->
 
 ## API des applications Microsoft
 `<https://graph.microsoft.com/v1.0>` est directement lié à Microsoft Azure. Microsoft Graph est un service de Microsoft qui permet d'accéder aux données et services de divers produits Microsoft, y compris ceux de la suite Microsoft 365 et Azure Active Directory. Voici comment ils sont connectés :
@@ -57,7 +57,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 En résumé, Microsoft Graph est une interface centrale qui permet d'interagir avec les données et les services de Microsoft, y compris ceux de Microsoft Azure et Microsoft 365. Les API et endpoints fournis par Microsoft Graph nécessitent des autorisations et des tokens d'accès gérés par Azure AD pour s'assurer que les requêtes sont sécurisées et que l'accès aux données est contrôlé.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Inscription de boomi atmosphere sur Microsoft Azure -->
+<!-- INSCRIPTION DE BOOMI ATMOSPHERE SUR MICROSOFT AZURE -->
 
 ## Inscription de boomi atmosphere sur Microsoft Azure
 1. Accédez à **Azure Active directory**.
@@ -66,7 +66,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
 4. Configurez **Boomi Atmosphere**.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Configuration de Postman -->
+<!-- CONFIGURATION DE POSTMAN -->
 
 ## Configuration de Postman
 
@@ -81,7 +81,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
       - `client_secret` : Utilisez la valeur du secret client que vous avez copié.
       - `grant_type` : `client_credentials`
 
-<!-- Configuration de Boomi -->
+<!-- CONFIGURATION DE BOOMI -->
 
 ## Configuration de Boomi
 1. **Configurer les Détails de la Connexion :**
@@ -98,7 +98,7 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
    - **Access Token URL :** Utilisez l'URL suivante, en remplaçant {`tenant-id`} par votre ID de locataire : `https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- L’utilité des paramètres -->
+<!-- L’UTILITE DES PARAMETRES -->
 
 ## L’utilité des paramètres
 
@@ -122,7 +122,7 @@ Ces paramètres sont essentiels pour l'authentification et l'autorisation OAuth 
   - **Utilité :** C'est l'identifiant unique de votre locataire Azure AD (votre organisation dans Azure). Il est nécessaire pour configurer correctement les URL d'autorisation et de jeton afin de pointer vers les ressources de votre locataire spécifique.
   - **Obtention :** Vous pouvez le trouver dans le portail Azure AD sous les propriétés de votre annuaire.
 
-<!-- Utilisation globale de ces paramètres -->
+<!-- UTILISATION GLOBALE DE CES PARAMETRES -->
 
 ## Utilisation globale de ces paramètres
 Ces paramètres sont utilisés ensemble pour permettre à votre application d'obtenir un jeton d'accès via le flux d'authentification OAuth 2.0. Voici un résumé du processus :
@@ -131,7 +131,7 @@ Ces paramètres sont utilisés ensemble pour permettre à votre application d'ob
 3. **Obtention du jeton :** Si les informations fournies sont valides, Azure AD renvoie un jeton d'accès.
 4. **Accès aux API :** Votre application utilise ce jeton d'accès pour faire des requêtes authentifiées aux API de Microsoft Graph et accéder aux ressources demandées.
 
-<!-- Utilité de l'Access Token dans Boomi -->
+<!-- UTILITE DE L'ACCESS TOKEN DANS BOOMI -->
 
 ## Utilité de l'Access Token dans Boomi
 
