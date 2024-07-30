@@ -29,7 +29,7 @@
   </ol>
 </details>
 
-
+<!-- Introduction -->
 
 ## Introduction
 
@@ -37,6 +37,7 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Outils et technologies -->
 
 ## Outils et technologies
 
@@ -46,7 +47,9 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 4. **API BoondManager:** https://api.boondmanager.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## API des applications Microsoft:
+<!-- API des applications Microsoft -->
+
+## API des applications Microsoft
 `<https://graph.microsoft.com/v1.0>` est directement lié à Microsoft Azure. Microsoft Graph est un service de Microsoft qui permet d'accéder aux données et services de divers produits Microsoft, y compris ceux de la suite Microsoft 365 et Azure Active Directory. Voici comment ils sont connectés :
 1. **Azure Active Directory (Azure AD):** Microsoft Graph permet de gérer les utilisateurs, les groupes, et les applications dans Azure AD. Cela inclut la gestion des identités, des accès, des rôles et des autorisations.
 2. **Microsoft 365:** Les données et services de Microsoft 365, comme les emails d'Outlook, les fichiers de OneDrive, les calendriers, les contacts, et plus encore, sont accessibles via Microsoft Graph.
@@ -54,18 +57,37 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 En résumé, Microsoft Graph est une interface centrale qui permet d'interagir avec les données et les services de Microsoft, y compris ceux de Microsoft Azure et Microsoft 365. Les API et endpoints fournis par Microsoft Graph nécessitent des autorisations et des tokens d'accès gérés par Azure AD pour s'assurer que les requêtes sont sécurisées et que l'accès aux données est contrôlé.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Inscription de boomi atmosphere sur Microsoft Azure:
-1. Azure Active directory
-2. Gérer
-3. Inscriptions d’application
-4. Boomi Atmosphere
+<!-- Inscription de boomi atmosphere sur Microsoft Azure -->
+
+## Inscription de boomi atmosphere sur Microsoft Azure
+1. Accédez à **Azure Active directory**.
+2. Naviguez vers **Gérer**.
+3. Sélectionnez **Inscriptions d'application**.
+4. Configurez **Boomi Atmosphere**.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Inscription de boomi atmosphere sur Microsoft Azure:
-1. Azure Active directory
-2. Gérer
-3. Inscriptions d’application
-4. Boomi Atmosphere
+<!-- Configuration de Postman -->
+
+## Configuration de Postman
+
+1. **Configurez la Requête dans Postman :**
+
+   **URL :** `https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token`
+
+   Remplacez `{tenant-id}` par votre ID de locataire.
+
+   **Méthode :** `POST`
+
+   **Headers :**
+
+    **Body (x-www-form-urlencoded) :**
+      - `client_id` : Utilisez l'ID d'application (client ID).
+      - `scope` : `https://graph.microsoft.com/.default`
+      - `client_secret` : Utilisez la valeur du secret client que vous avez copié.
+      - `grant_type` : `client_credentials`
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
