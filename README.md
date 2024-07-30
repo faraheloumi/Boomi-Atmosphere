@@ -25,8 +25,8 @@
   <ol>
     <li><a href="#about-the-project">Introduction</a></li>
     <li><a href="#features">Outils et technologies</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#installation">API des applications Microsoft</a></li>
+    <li><a href="#contributing">Inscription de boomi atmosphere sur Microsoft Azure </a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -42,35 +42,25 @@ Boomi offers an Integration Platform as a Service (iPaaS) that enables the conne
 
 ## Outils et technologies
 
-  #Boomi Atomsphere
-  
-  API des applications Microsoft: https://graph.microsoft.com/v1.0
-  API Atlassian:
-  Jira: https://farahelloumi.atlassian.net/rest/api/2/
-  Confluence: https://farahelloumi.atlassian.net/wiki/
-  API BoondManager: https://api.boondmanager.com
+1. **Boomi Atomsphere**
+2. **API des applications Microsoft:** https://graph.microsoft.com/v1.0
+3. **API Atlassian:** Jira: https://farahelloumi.atlassian.net/rest/api/2/ and Confluence: https://farahelloumi.atlassian.net/wiki/
+4. **API BoondManager:** https://api.boondmanager.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Installation
-
-1. **Clone this repository** to your local machine.
-2. **Navigate to the project directory**.
-3. **Run `flutter pub get`** to install dependencies.
-4. **Connect your device** and **run the app** using `flutter run`.
+## API des applications Microsoft:
+`<https://graph.microsoft.com/v1.0>` est directement lié à Microsoft Azure. Microsoft Graph est un service de Microsoft qui permet d'accéder aux données et services de divers produits Microsoft, y compris ceux de la suite Microsoft 365 et Azure Active Directory. Voici comment ils sont connectés :
+1. **Azure Active Directory (Azure AD):** Microsoft Graph permet de gérer les utilisateurs, les groupes, et les applications dans Azure AD. Cela inclut la gestion des identités, des accès, des rôles et des autorisations.
+2. **Microsoft 365:** Les données et services de Microsoft 365, comme les emails d'Outlook, les fichiers de OneDrive, les calendriers, les contacts, et plus encore, sont accessibles via Microsoft Graph.
+3. **Azure Services :** Microsoft Graph peut également interagir avec d'autres services Azure pour gérer les ressources et les périphériques, obtenir des informations de sécurité, et automatiser des processus en utilisant les données d'Azure.
+En résumé, Microsoft Graph est une interface centrale qui permet d'interagir avec les données et les services de Microsoft, y compris ceux de Microsoft Azure et Microsoft 365. Les API et endpoints fournis par Microsoft Graph nécessitent des autorisations et des tokens d'accès gérés par Azure AD pour s'assurer que les requêtes sont sécurisées et que l'accès aux données est contrôlé.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Inscription de boomi atmosphere sur Microsoft Azure:
+1. Azure Active directory
+2. Gérer
+3. Inscriptions d’application
+4. Boomi Atmosphere
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
