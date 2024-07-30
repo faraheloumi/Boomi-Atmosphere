@@ -4,9 +4,6 @@
 <div align="center">
   <h1 style="font-size:50px">Boomi Atmosphere
     </h1>
-  <a href="https://github.com/faraheloumi/Boomi-Atmosphere">
-    <img src="assets/FinanSync-logos_transparent.svg" alt="Logo" width="350" height="300">
-  </a>
   <p align="center">
     A data integration platform
     <br />
@@ -27,6 +24,7 @@
     <li><a href="#features">Outils et technologies</a></li>
     <li><a href="#installation">API des applications Microsoft</a></li>
     <li><a href="#contributing">Inscription de boomi atmosphere sur Microsoft Azure </a></li>
+    <li><a href="#contributing">Configuration de Postman </a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -62,6 +60,14 @@ En résumé, Microsoft Graph est une interface centrale qui permet d'interagir a
 3. Inscriptions d’application
 4. Boomi Atmosphere
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Inscription de boomi atmosphere sur Microsoft Azure:
+1. Azure Active directory
+2. Gérer
+3. Inscriptions d’application
+4. Boomi Atmosphere
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- CONTACT -->
